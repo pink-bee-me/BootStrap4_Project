@@ -1,0 +1,47 @@
+
+
+
+/*Carousel Styles */
+.carousel_header h3 {
+    font-style:"Playbill";
+    font-weight:900;
+    color:white;
+}
+#headerJumboTron {
+    position:relative;
+    padding-top:5%;
+    margin-bottom: 0%;
+    padding-bottom:10px;
+}
+
+.container > #carouselNowShowing.carousel.slide {
+    position:relative;
+    top:15;
+    width:100%;
+  height:350px;
+  background-color:black;
+}
+
+.carousel-indicators > ol, li {
+    position:relative;
+}
+.carousel-inner { 
+    position:relative;
+
+}
+.carousel.item {
+    position:relative;
+    width:100%;
+  
+}
+
+
+
+.carousel-inner > .carousel-item > img {
+    position:relative;
+    left:22.75%;
+    width: 55%;
+    height: 350px;
+     
+    
+     }
