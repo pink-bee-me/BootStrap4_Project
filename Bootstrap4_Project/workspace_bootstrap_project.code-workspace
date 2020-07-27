@@ -1,14 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "..\\..\\All_My_Gits"
-		}
-	],
-	"settings": {
-		"liveServer.settings.useBrowserPreview": true,
-		"liveServer.settings.fullReload": true
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }

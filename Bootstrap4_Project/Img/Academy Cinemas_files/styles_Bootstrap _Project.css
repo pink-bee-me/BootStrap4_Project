@@ -1,0 +1,57 @@
+
+
+
+
+
+/*Carousel Styles */
+.carousel_header {
+    font-style:"Playbill";
+    font-weight:900;
+    color:white;
+}
+#headerJumboTron {
+    position:relative;
+    padding-top:5%;
+    margin-bottom: 0%;
+    padding-bottom:10px;
+}
+
+.container > #carouselNowShowing.carousel.slide {
+    position:relative;
+    top:15;
+    left:10%;
+    width:80%;
+  height:70vh;
+  background-color:black;
+}
+
+.carousel-indicators > ol, li {
+    position:relative;
+}
+.carousel-inner { 
+    position:relative;
+}
+
+.carousel-inner >.carousel-item {
+    position:relative;
+    width:100%;
+}
+
+.carousel-item  img {
+    position:relative;
+    left:22.75%;
+    width: 55%;
+    height: 350px;
+}
+
+#facility > h2{
+    text-align:center;
+    font-weight:bold;
+    letter-spacing: .25 rem;
+}
+  .accomodations_list ul {
+      list-style-position: outside;
+  }
+  } {
+         
+     }

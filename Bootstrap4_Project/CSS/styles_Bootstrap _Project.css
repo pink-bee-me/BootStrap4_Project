@@ -1,47 +1,94 @@
 
+body {
+    background-color:#04a4bd;
+}
 
+#Intro .jumbotron {
+    padding-top:50px;
+}
 
 /*Carousel Styles */
-.carousel_header h3 {
-    font-style:"Playbill";
-    font-weight:900;
+.carousel_header {
+    font-family:"Impact";
     color:white;
+    padding-bottom:2%;
 }
 #headerJumboTron {
     position:relative;
-    padding-top:5%;
-    margin-bottom: 0%;
     padding-bottom:10px;
 }
 
-.container > #carouselNowShowing.carousel.slide {
+ #carouselNowShowing > .carousel .slide {
     position:relative;
     top:15;
-    width:100%;
-  height:350px;
-  background-color:black;
+    left:10%;
+    width:80%;
+  height:70vh;
+
 }
 
-.carousel-indicators > ol, li {
-    position:relative;
+.carousel-indicators {
+    position: relative;
+    bottom: -15px;
+    padding-bottom:1%;
 }
+
 .carousel-inner { 
     position:relative;
-
+    padding:2%;
+    border:4px solid white;
+    background-color:black;
 }
-.carousel.item {
+.carousel-item .active{
+   
+    width:100%;
+}
+.carousel-inner > .carousel-item {
     position:relative;
     width:100%;
-  
+}
+.carousel-item img {
+    position:relative;
+    left:0%;
+    width:55%;
+    height: 350px;
 }
 
-
-
-.carousel-inner > .carousel-item > img {
+#facility {
     position:relative;
-    left:22.75%;
-    width: 55%;
-    height: 350px;
-     
-    
-     }
+    background-color:#04a4bd;
+    color:white;
+}
+
+#facility h3{
+    text-align:center;
+    font-weight:bold;
+    letter-spacing: .25rem;
+    color:white;
+    padding-top:2%;
+}
+  .accomodations_list ul {
+      list-style-position: outside;
+  }
+
+#ShowTimes_WithCards {
+    position:relative;
+    top:0;
+    padding:3%;
+     background-color: gray;
+}  
+  
+#reel-time {
+    color:white;
+    border:5px dashed white;
+padding:1.5%;
+background-color:black;
+}
+
+.movieBUTTON {
+    font-size:1.25em;
+    text-align:center;
+}
+#DealsButton {
+    color:blue;
+}

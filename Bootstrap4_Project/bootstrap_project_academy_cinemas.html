@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Academy Cinemas</title>
+  <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles_Bootstrap _Project.css">
+  <!--Bootstrap CSS-->
+</head>
+
+<body >
+  <div class="container">
+  <!--NavBar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-info">
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#facility">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#reel-time">ShowTimes</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#rewards">Movie Deals</a>
+            </li>
+        </ul>
+<!--Register Button / Form Modal Link / Search Button (ALL PART OF NAV BAR) -->
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" data-toggle="Register" data-target="#myModal">Register</button>
+      </form>
+    </nav>
+
+     <!-- Academy Cinemas / JumboTron Heading-->
+    <div id="Intro" class="jumbotron jumbotron-fluid bg-info text-center">
+          <h1 id="headerJumboTron" class="display-4  hidden-sm-down" style="color:#fff; font-family: Roboto;font-weight:900;text-transform:uppercase;">Academy Cinemas</h1>
+               <p class="lead">Sit Back , Relax, and Enjoy The Show! </p>
+ <!--Now Playing / Carousel ( features: captions, crossfade, & individual interval ) -->
+<div id=MovieCarousel>
+      <div class="container mt-3">
+          <div class="carousel-inner">
+            <div id="carouselNowShowing" class="carousel slide" data-ride="carousel">
+            <h3 class="carousel_header m-auto mb-3" >Now Playing...</h3>      
+          <div class="carousel-item active">
+            <img  src="./Img/BATB_2017_Soundtrack.jpg"  alt="The browser is unable to show this photo.">
+            </div>
+          <div class="carousel-item">
+            <img src="./Img/Carousel_Ghost_In_The_Shell_.jpg" alt="The browser is unable to show this photo">"
+          </div>
+          <div class="carousel-item">
+            <img  src="./Img/Carousel_Kong_Skull_Island.jpg" alt="The browser is unable to show this photo.">
+            </div>
+            <ol class="carousel-indicators m-auto">
+                <li data-target="#carouselNowShowing" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselNowShowing" data-slide-to="1"></li>
+                <li data-target="#carouselNowShowing" data-slide-to="2"></li>
+              </ol>
+        </div>
+          
+          </div>
+        </div>
+    </div>
+</div>      
+
+ <!--About Section/ Accomodations / Photo--> 
+
+ <div id="facility" class="container mt-3">
+
+  <div class="row mb-3 mt-3">
+   <div class="col-md-4 ">
+     <h3 class="About">About Us:</h3>
+     <ul class="accomodations_list mt-3">
+   <li>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</li>
+  <li class="mt-3">Showing our guests a great time is our passion and seeing their smiles is our pleasure!</li>
+     </ul>
+  </div>
+  <div class="col-md-4 mt-2">
+      <img class="img-fluid " src="./img/pdx.jpg" alt=""/> 
+   </div>
+   <div class="col-md-4 ">
+    <h2> Accomodations:</h2>
+     <ul class="accomodations_list mt-2">
+    <li>All of our auditoriums are equipped with band new Christie 3d&reg; sound systems!</li>
+   <li class="mt-3">Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly
+      &#9855;.</li>
+   </ul>
+  </div>
+</div>
+</div>
+<div id="ShowTimes_WithCards" class="container mt-3">
+<div class="row mb-3 ">
+  <h3 id="reel-time" class="m-auto ">ShowTimes:</h3>
+  </div>
+  <div class="row mb-3">
+ <div class="col-sm-4">
+       <li id="BeautyButton" class="list-group-item">
+              <a  class="nav-link movieBUTTON m-auto" href="#beautyCard">Beauty & The Beast</a>
+            <div class="container-pill mt-0">
+                <div class="d-flex bd-highlight mb-2  justify-content-around">
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">Noon</span>
+                  </div>
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">3:35pm</span>
+                  </div>
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">7:25pm</span>
+                  </div>
+                  </li>
+                 </div>
+            <div class="col-sm-4">
+            <li id="GhostButton" class="list-group-item">
+              <a class="nav-link movieBUTTON" href="#ghostCard">Ghost In The Shell</a>
+              <div class="d-flex bd-highlight mb-2  justify-content-around">
+                <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">10:45am</span></div>
+                <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">1:55pm</span></div>
+                <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">8:00pm</span>
+                </div>
+                </li>
+              </div>
+            <div class="col-sm-4">
+              <li id="SkullButton" class="list-group-item">
+                <a class="nav-link  movieBUTTON " href="#skullCard">Kong: Skull Island</a>
+                <div class="d-flex bd-highlight mb-2  justify-content-around">
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">2:15pm</span></div>
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">5:55pm</span></div>
+                  <div class="p-2 bd-highlight"><span class="badge badge-pill badge-info">9:45pm</span></div>
+                </div>
+                </li>
+       </div>
+      </div>
+  </div>
+    <!-- END ShowTimes  : Movie Info/Review Link &  ShowTimes Pill Badges --->
+
+
+<!-- Movie Info Cards -->
+<div class="container movieInfoCard_Tabbed role="tab">
+<div  id="beautyCard" class="card text-center">
+<div class="card" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\beautyandthebeast.jpg" class="card-img-top" alt="beauty and the beast promo pic">
+ 
+    <h6 class="mt-3">Movie Info.</h6>
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Beauty & The Beast</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#review_Beauty">Reviews</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> Beauty & The Beast</h5>
+    <div class="card-plot mt-3 lead">
+    <p class="card-text">Placed under a wicked spell, this prince has been transformed from royalty to beastly! He is doomed to a life of isolation in his lonely castle with only his enchanted servants to look after him and keep him company. For it is only true love that can change the prince back again... and who would love a Beast? No one, of course.... That was a certainty,... until the day an old man happens upon the enchanted castle and is taken as prisoner by the beast! When Belle, the old man's daughter, comes searching for her father, she finds him weak and cold. She agrees to take her father's place as prisoner , and so the Beast set him free... and Belle must stay...<br><br>
+     *** Don't miss this memorable live-action remake of this Disney Classic *** <br>
+     <span class="m-auto"> "A tale as old as time,... Beauty and The Beast!"</span>
+    </p>
+    <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3 m-auto">Back To ShowTimes</a>
+  </div>
+  </div>
+ </div>  
+</div>
+</div>
+
+<!--Movie Card :Ghost In The Shell-->
+<div class="container movieInfoCard_Tabbed role="tab">
+<div  id="ghostCard" class="card text-center">
+<div class="card" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\ghostintheshell.jpg" class="card-img-top" alt="ghost in the shell promo pic">
+    <h6 class="mt-3">Movie Info.</h6>
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Ghost In The Shell</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#review_Ghost">Reviews</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> Ghost In The Shell</h5>
+    <div class="card-plot mt-3 lead">
+    <p class=" card-text font-weight-bold"> " In the near future, Major is the first of her kind: a human who is
+    cyber-enhanced to be the perfect sexy bad-ass soldier...Manga Style!..."<br>
+    <blockquote class="blockquote mb-0"><p class="font-italic">
+      Rupert Sanders actually made a movie for the fans...Ghost In The Shell is like a love letter to the
+        franchise...paying homage to the Ghost in the Shell Manga, Ghost in the Shell the Movie, Ghost in the
+        Shell 2 Innocence, Stand Alone Complex, Stand Alone Complex 2nd Gig, Arise, and Ghost in the Shell:
+        Solid State. It successfully captures the feel of the entire franchise."
+        <footer class="blockquote-footer">Journalist
+          <br><cite class="text-muted" title="Source Title">Variety Magazine</cite>       </p>
+          <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3">Back To ShowTimes</a> 
+       </div>
+      </div>
+       </div>
+</div>
+</div>
+
+
+<!--Movie Card : Kong: Skull Island-->
+<div class="container movieInfoCard_Tabbed role="tab">
+<div  id="skullCard" class="card text-center">
+<div class="card" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\kongskullisland.jpg" class="card-img-top" alt="kong skull island promo pic">
+<h6 class="mt-3">Movie Info.</h6>
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Kong: Skull Island</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#review_Skull">Reviews</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> Kong: Skull Island</h5>
+    <div class="card-plot mt-3 lead">
+    <p class="card-text"><span class="font-weight-bold font-italic"> A disillusioned soldier and a photojournalist join an expedition to Skull Island, <br>an uncharted territory...</span><br>Little did they know that was the just the beginning of what turns out to be a 
+   terrifying and deadly adventure where they become witnesses to unimaginable monstrosities of epic proportion... 
+  </p>
+  </div>
+  <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3">Back To ShowTimes</a> 
+       </div>
+      
+       </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Movie Review Cards -->
+<div class="container movieInfoCard_Tabbed role="tab">
+<div id="review_Beauty" class="card text-center" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\beautyandthebeast.jpg" class="card-img-top" alt="beauty and the beast promo pic">
+ <h6 class="mt-3">Movie Info.</h6>
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="#beautyCard">Beauty & The Beast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#review_Beauty">Reviews</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"> Beauty & The Beast: Reviews</h5>
+      <div class="card-text">
+        <div class="card-plot mt-3 lead">
+   <div class="card p-3 text-right">
+         <p class="font-italic"> <blockquote class="blockquote mb-0">"...this live-action/digital hybrid, directed by Bill Condon and starring
+              Emma
+              Watson and Dan Stevens
+              in the title roles, is more than a flesh-and-blood (and prosthetic fur-and-horns) revival of
+              the
+              26-year-old cartoon, and more than a dutiful trip back to the pop-culture fairy-tale well. Its
+              classicism feels unforced and fresh. Its romance neither winks nor panders. It looks good,
+              moves
+              gracefully and leaves a clean and invigorating aftertaste. I almost didn’t recognize the
+              flavor: I
+              think
+              the name for it is joy."
+            <footer class="blockquote-footer text-center">
+              <small class="text-normal">A.O. Scott
+                <br><cite class="text-muted" title="Source Title">The New York Times</cite>
+              </small>
+            </footer>
+          </blockquote>
+          </p>
+        </div>
+        <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3">Back To ShowTimes</a>  
+      </div>
+        
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container movieInfoCard_Tabbed role="tab">
+<div id="review_Ghost" class="card text-center" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\ghostintheshell.jpg" class="card-img-top" alt="ghost in the shell promo pic">
+   <h6 class="mt-3">Movie Info.</h6>
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="#ghostCard">Ghost in The Shell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#review_Ghost">Reviews</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"> Ghost In The Shell: Reviews</h5>
+      <div class="card-text">
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p class="font-italic text-center">"...everything that one could want. An interesting plot, deep thoughts, nice
+            dialog, hot chicks, cool
+            action, neat tech, and animation that puts everything to shame which has ever been produced in the
+            western world...with Scarlett Johansson, 'Ghost in the Shell' out-shines 'Final Fantasy' brightly.Unbelievable!
+          <footer class="blockquote-footer text-center">
+            <small class="text-normal "> Mr. Antialias11<br>
+              <cite class="text-muted" title="Source Title">True Connoisseur of Anime</cite>
+            
+            </small>
+          </footer>
+        </blockquote>
+        </p>
+        </div>
+        <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3">Back To ShowTimes</a>  
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="container movieInfoCard_Tabbed role="tab">
+<div id="review_Skull" class="card text-center" style="width: 52rem;">
+<div class="card-header">
+<img src=".\Img\kongskullisland.jpg" class="card-img-top" alt="kong skull island promo pic">
+      <h6 class="mt-3">Movie Info.</h6>
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="#skullCard">Kong: Skull Island</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#review_Skull">Reviews</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h5 class="card-ti  tle"> Kong: Skull Island: Reviews</h5>
+      <div class="card-text">
+        <div class="card-plot mt-3 lead">
+        <div class="card p-3 text-center">
+       <p class="card-text"> <blockquote class="blockquote mb-0">"Kong: Skull Island is the cinematic equivalent of a high-velocity roller-coaster ride. While you’re strapped in, it’ll jack up your pulse rate and make you laugh, scream,
+          squirm, and gasp, then leave you exhausted and exhilarated when it finally screeches to a sudden
+          stop.Take a bit of the original Kong, mix it with one part Private Ryan, a dash of The Deer Hunter,
+          some Monty Python, lots of Jurassic Park, maybe even a little bit of SpaceBalls!!!...pleasing fare one
+          can really sink their teeth
+          into and enjoy!
+        </p>
+        <footer class="blockquote-footer mb-6">
+          <small class="text-normal mb-6">Miss Sexy Texas
+            <br><cite class="text-muted" title="Source Title">Verified Movie Patron</cite>
+          </small>
+        </footer>
+      </blockquote>
+          </p>
+          </div>
+          <a href="#ShowTimes_WithCards" class="btn btn-primary mt-3">Back To ShowTimes</a>  
+          </div>
+     </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+    <!--Movie Deals JumboTron Heading-->
+    <div class="jumbotron jumbotron-fluid bg-info text-center">
+      <div class="container">
+        <h1 class="display-4  hidden-sm-down" style="color:#fff; font-family: Roboto;font-weight:900;text-transform:uppercase;" ">Movie Deals</h1>
+        <p class="lead text-light">Check out our promotions!</p>
+         <!--Movie Deals Button-->
+         <button id="DealsButton" type="button" class="btn btn-outline" data-toggle="modal" data-target="#Register">Register to receive movie deals...</button>
+         <!--Movie Deals Button-->     
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Movie Deals JumboTron Heading-->
+  
+          <!--form modal-->
+          <div class="modal" tabindex="-1" role="dialog" id="Register">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register To Receive Movie Deals...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body"  style="text-align: left;" >
+
+                  <form>
+                    <fieldset class="form-group" >
+                      <label for="fistName" >First Name :</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="First Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="lastName">Last Name :</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Last Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label  for="email">Email :</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email...">
+                    </fieldset>
+                      <fieldset class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password...">
+                      </fieldset>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+    
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ <!--Sign-up Form-->
+ <div class="container">
+  <div class="text-center">
+     <form id="rewards">
+      <h1 class="text-primary my-4">Sign up for Movie Club Rewards!</h1>
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email...">
+          <button type="button" class="btn btn-outline popover-dismiss mt-3" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards." data-original-title="" title="">
+            Submit
+          </button>
+      </div>
+      
+    <!--footer-->
+    <div class="container my-5">
+      <ul class="nav nav-inline">
+        <li class="nav-item">
+          <small><a class="nav-link active" href="#rewards">Movie Rewards</a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#">Movies@news.org</a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link">&copy;2019 Academy Cinemas&reg;</a></small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--Footer-->
+ <!-- Optional JavaScript  & jQuery (first), then Popper.js (Second), then Bootstrap JS (Third or Last) -->
+ <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!--Popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <!--Bootstrap JS-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+ <!-- Add Hover Trigger to PopOver Effect-->
+<script>
+        $('.popover-dismiss').popover({
+         trigger: 'focus'
+        })
+  </script>
+ 
+ 
+</body>
+
+
+</html>
